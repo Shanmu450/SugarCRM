@@ -1,0 +1,22 @@
+#wrapper {
+    width: 1450px;
+       clear: both;
+       border-bottom: 1px solid #e9ecef;
+       border-bottom-left-radius: .3rem;
+       border-bottom-right-radius: .3rem;
+       border-bottom-style: dotted;
+   }
+   
+   #first {
+     
+     width:425px;
+     float:left;
+   }
+   #second {
+     
+     width:425px;
+     float:left;
+   }
+   #accordian{
+       margin-right: 20px;
+       }

@@ -1,0 +1,21 @@
+<div class="container"  style="margin-top: 80px;">
+
+  <p><strong>At-A-Glance</strong></p><br>
+  
+
+  <!-- accordion where you can close multiple groups -->
+  <accordion [closeOthers]="false" [showArrows]="true" *ngFor="let group of groups">
+    <accordion-group>
+      <accordion-heading>
+        <i id="accordian" class="pull-left glyphicon"></i> <strong>{{group.title}} </strong>
+      </accordion-heading>
+      <span *ngFor='let x of group.fields'>
+        <div id="wrapper">
+          <div id="first"><label style="margin-top: 5px;">{{x.label}}</label></div>
+          <div id="second" style="margin-top: 5px;"><span>{{x.value}}</span></div>
+        </div>
+        <br>
+      </span>
+    </accordion-group>
+  </accordion>
+</div>
